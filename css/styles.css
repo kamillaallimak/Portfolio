@@ -55,11 +55,15 @@ p {
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
   color: white;
+  width: 150px;
+  text-align: center;
 }
 
 .about-link {
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
+  width: 150px;
+  text-align: center;
 }
 
 .launch-link {
@@ -99,4 +103,29 @@ p {
 
 .email-link:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 576px) {
+  p {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 48px;
+    line-height: 1.5;
+  }
+  h2 {
+    font-size: 32px;
+    text-align: center;
+  }
+  .hide-img {
+    display: none;
+  }
+
+  .launch-link {
+    display: block;
+    margin: 0 auto;
+    max-width: 90%;
+    text-align: center;
+  }
 }
