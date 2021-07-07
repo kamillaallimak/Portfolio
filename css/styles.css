@@ -71,6 +71,10 @@ p {
   box-shadow: var(--box-shadow);
   color: white;
   padding: 20px 15px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  width: 80%;
 }
 
 .homepage-link {
@@ -106,10 +110,6 @@ p {
 }
 
 @media (max-width: 576px) {
-  p {
-    text-align: center;
-  }
-
   h1 {
     font-size: 48px;
     line-height: 1.5;
@@ -118,8 +118,9 @@ p {
     font-size: 32px;
     text-align: center;
   }
-  .hide-img {
-    display: none;
+
+  p {
+    text-align: center;
   }
 
   .launch-link {
